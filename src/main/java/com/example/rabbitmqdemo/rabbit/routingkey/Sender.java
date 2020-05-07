@@ -37,9 +37,7 @@ public class Sender implements RabbitTemplate.ConfirmCallback, RabbitTemplate.Re
 
     //发送消息，不需要实现任何接口，供外部调用。
     public void send(String msg){
-
         CorrelationData correlationId = new CorrelationData(UUID.randomUUID().toString());
-
         System.out.println("开始发送消息 : " + msg.toLowerCase());
         Object response = rabbitTemplate.convertSendAndReceive("exchange.ff.ff.aaa", "sendPush111", msg, correlationId);
         System.out.println("结束发送消息 : " + msg.toLowerCase());

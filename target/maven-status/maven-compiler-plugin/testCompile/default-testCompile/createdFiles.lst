@@ -1,0 +1,7 @@
+com\example\rabbitmqdemo\rabbitmq\FanoutTest.class
+com\example\rabbitmqdemo\rabbitmq\ManyTest.class
+com\example\rabbitmqdemo\rabbitmq\ObjectTest.class
+com\example\rabbitmqdemo\rabbitmq\TopicTest.class
+com\example\rabbitmqdemo\RabbitmqdemoApplicationTests.class
+com\example\rabbitmqdemo\rabbitmq\RoutingKeyTest.class
+com\example\rabbitmqdemo\rabbitmq\HelloTest.class

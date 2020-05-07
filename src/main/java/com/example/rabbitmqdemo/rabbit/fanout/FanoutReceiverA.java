@@ -8,9 +8,16 @@ import org.springframework.stereotype.Component;
 @RabbitListener(queues = "fanout.A")
 public class FanoutReceiverA {
 
+//    @RabbitHandler
+//    public void process(String message) {
+//        System.out.println("fanout Receiver A  : " + message);
+//    }
+
     @RabbitHandler
-    public void process(String message) {
-        System.out.println("fanout Receiver A  : " + message);
+    public String process(String message) {
+        String s = "fanout Receiver A  : " + message;
+        System.out.println(s);
+        return s;
     }
 
 }
